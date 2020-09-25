@@ -4,25 +4,6 @@
   
     
     <entry>
-      <title>hexo搭建</title>
-      <link href="2020/09/25/hexo%E6%90%AD%E5%BB%BA/"/>
-      <url>2020/09/25/hexo%E6%90%AD%E5%BB%BA/</url>
-      
-        <content type="html"><![CDATA[<h1 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h1><blockquote><p>这里是非常必要的准备工作</p></blockquote><ul><li>安装git</li><li>安装node.js  </li></ul><h1 id="图片"><a href="#图片" class="headerlink" title="图片"></a>图片</h1><p><img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1601012228184&di=2bc8f47c2dbcdae4de8098743cd2220a&imgtype=0&src=http://hbimg.b0.upaiyun.com/e67a770767e17950e71bdffb344053efdcf6e5029719-mSWTCc_fw658" alt="古风图片"></p><h1 id="超链接"><a href="#超链接" class="headerlink" title="超链接"></a>超链接</h1><p><a href="https://hawthornleaves.github.io/">我的博客</a></p>]]></content>
-      
-      
-      
-        <tags>
-            
-            <tag> hexo </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>Hello World</title>
       <link href="2020/09/24/hello-world/"/>
       <url>2020/09/24/hello-world/</url>
