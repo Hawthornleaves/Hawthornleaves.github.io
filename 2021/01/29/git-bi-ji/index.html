@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="test, ww&#39;s blog">
+    <meta name="keywords" content="git笔记, ww&#39;s blog">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>test | ww&#39;s blog</title>
+    <title>git笔记 | ww&#39;s blog</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -310,12 +310,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/10.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/14.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">test</h1>
+                    <h1 class="description center-align post-title">git笔记</h1>
                 </div>
             </div>
         </div>
@@ -467,12 +467,402 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="test"><a href="#test" class="headerlink" title="test"></a>test</h1><pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token class-name">Public</span> <span class="token keyword">class</span> <span class="token class-name">HelloWorld</span><span class="token punctuation">&#123;</span>
-    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token class-name">String</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>args<span class="token punctuation">)</span><span class="token punctuation">&#123;</span>
-        <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">print</span><span class="token punctuation">(</span><span class="token string">"Hello,World"</span><span class="token punctuation">)</span>
-    <span class="token punctuation">&#125;</span>
-<span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+                <h1 id="git-amp-github学习笔记"><a href="#git-amp-github学习笔记" class="headerlink" title="git&amp;github学习笔记"></a>git&amp;github学习笔记</h1><h2 id="Linux常用的指令集合"><a href="#Linux常用的指令集合" class="headerlink" title="Linux常用的指令集合"></a>Linux常用的指令集合</h2><ol>
+<li><p>cd (Center Directory)： 改变目录</p>
+</li>
+<li><p>cd ..： 回退到上一个目录,</p>
+<blockquote>
+<p>注意cd后面必须要有空格</p>
+</blockquote>
+</li>
+<li><p>pwd (Print Working Directory)： 显示当前所在的目录路径</p>
+</li>
+<li><p>ls (List Files)/ ll：都是列出当前目录的所有文件，只不<strong>ll</strong>更加详细</p>
+</li>
+<li><p>touch：新建一个文件，如：touch new_document.js 就会在当前目录下新建一个new_document.js的文件</p>
+</li>
+<li><p>rm (remove)：删除一个文件</p>
+</li>
+<li><p>mkdir (Make Directory)：新建一个目录，也就是新建一个文件夹</p>
+</li>
+<li><p>rm -r：删除一个文件夹，也就是删除一个目录</p>
+</li>
+<li><p>mv (Move)：移动文件，如： mv new_document.js src，其中 new_document是指定的移动文件，src是目标文件夹</p>
+</li>
+<li><p>reset：重新初始化终端/清屏</p>
+</li>
+<li><p>clear：清屏</p>
+</li>
+<li><p>history查看命令历史</p>
+</li>
+<li><p>help：帮助</p>
+</li>
+<li><p>exit：退出</p>
+</li>
+<li><p><code>#</code>表 </p>
+</li>
+</ol>
+<h2 id="Git常用的指令集合"><a href="#Git常用的指令集合" class="headerlink" title="Git常用的指令集合"></a>Git常用的指令集合</h2><ol>
+<li>git add –&gt; 添加到仓库</li>
+<li>git commit -m “ “–&gt; 提交到仓库，引号中填写有意义的信息增加可读性</li>
+<li>git status –&gt; 查看当前仓库的状态</li>
+<li>git log –&gt; 查看历史版本</li>
+<li>git log –pretty=oneline –&gt; 查看历史版本的简略信息</li>
+<li>git reflog –&gt; 查看操作指令的历史</li>
+<li>cat <filename> –&gt; 查看指定文件的内容</li>
+<li>git diff <filename> –&gt; 查看指定文件修改了哪些内容</li>
+<li>git init –&gt; 初始化仓库（在当前文件夹）</li>
+<li>git init <foldername> –&gt; 初始化仓库（在指定文件夹）</li>
+<li>git reset –hard HEAD^ (HEAD^^)(HEAD~100)(版本号id) –&gt; 回退到上一个版本（上上个）（上一百个）（对应id的版本）</li>
+<li>git restore / git checkout – <filename> –&gt; 撤销修改</li>
+<li>rm <filename> –&gt; 在工作区中删除一个文件</li>
+<li>git rm <filename> –&gt; 在版本库中彻底删除一个文件，==记得提交 git commit一下==</li>
+<li>git remote add origin 自己远程仓库的地址 –&gt; 关联远程仓库</li>
+<li>git push -u origin master –&gt; 第一次推送master分支的所有内容，之后不需要<code>-u</code></li>
+<li>git branch <branchname> –&gt; 创建指定分支</li>
+<li>git branch -d <branchname> –&gt; 删除指定分支</li>
+<li>git branch –&gt; 查看当前所在的分支</li>
+<li>git branch -a –&gt; 查看所有创建得分支</li>
+<li>git checkout <branchname> / git switch <branchname> –&gt; 切换到指定分支</li>
+<li>git checkout -b <branchname> / git switch -c <branchname>–&gt; 创建并切换到指定分支</li>
+<li>git merge <branchname> –&gt; 合并指定分支到当前所在的分支,==快进模式==看不见合并历史</li>
+<li>git merge –no-ff -m “ “ <branchname> –&gt; 合并分支，==普通模式==有合并历史</li>
+<li>git log –graph –pretty=oneline –abbrev-commit –&gt; 查看分支的合并情况</li>
+<li>git stash –&gt; 隐藏并暂停当时的工作，方便进行其他比较着急的并行工作</li>
+<li>git stash list –&gt; 查看刚才隐藏工作所在的位置和编号</li>
+<li>git stash apply –&gt; 恢复刚才的工作，但是stash中的内容并不干净，需要使用<code>git stash drop</code>来删除（apply后面可以跟着，stash list中指定的stash编号）</li>
+<li>==git stash pop== –&gt; 回复刚才的工作，并且删除stash中的内容</li>
+<li>git cherry-pick <commit id> –&gt; 在当前分支，执行其他分支所进行的提交操作</li>
+<li>git branch -D <branchname> –&gt; 强行删除一个==没有合并==过的分支</li>
+<li>git remote (-v) –&gt; 查看远程仓库的信息（-v 更加详细）</li>
+<li>git push origin <branchname> –&gt; 推送指定分支到远程仓库 </li>
+<li>git fetch –&gt; 下载远程仓库的所有变动</li>
+<li>git mv A B –&gt; 文件名从A变到B</li>
+<li>git push –set-upstream origin <branchname> –&gt; 更换push的远程默认分支</li>
+<li>git push -f –&gt; 强制推送</li>
+</ol>
+<h2 id="Git概述"><a href="#Git概述" class="headerlink" title="Git概述"></a>Git概述</h2><blockquote>
+<p>目前全世界最流行的版本控制系统！！！</p>
+</blockquote>
+<h3 id="版本控制"><a href="#版本控制" class="headerlink" title="版本控制"></a>版本控制</h3><blockquote>
+<p>帮助用户管理本地各种版本的文件，并帮助团队更好的传递、修改、更新同一个文件，促进合作！</p>
+</blockquote>
+<h3 id="Git的诞生"><a href="#Git的诞生" class="headerlink" title="Git的诞生"></a>Git的诞生</h3><blockquote>
+<p>Linux之父——神人Linus花了两个星期，用C语言制作的版本控制系统！！！</p>
+</blockquote>
+<h3 id="版本控制系统"><a href="#版本控制系统" class="headerlink" title="版本控制系统"></a>版本控制系统</h3><ol>
+<li>集中式版本控制系统(CVS &amp; SVN)</li>
+</ol>
+<blockquote>
+<p>集中式版本控制系统的版本库放在中央服务器。在工作中，工作人员需要使用自己的电脑，在联网状态下与中央服务器进行交互（获取、上传文件），因此在网络情况较差的情况下，体验感非常糟糕。但是中央服务器的存在，减少了冲突发生的可能。</p>
+</blockquote>
+<ol start="2">
+<li>分布式版本控制系统(Git)</li>
+</ol>
+<blockquote>
+<p>分布式版本控制系统中不存在中央服务器，每个人的电脑上都有一个完整的版本库，因此文件的安全性和效率都得到了提高。==但是，一般在团队中会有一台电脑充当“中央管理器”的角色，不过也仅仅是为了团队成员能够更好的交换各自修改的文件==</p>
+</blockquote>
+<h3 id="各种版本控制系统的优缺点"><a href="#各种版本控制系统的优缺点" class="headerlink" title="各种版本控制系统的优缺点"></a>各种版本控制系统的优缺点</h3><ol>
+<li>本地版本控制<ol>
+<li>优点<ol>
+<li>利于个人的访问</li>
+</ol>
+</li>
+<li>缺点<ol>
+<li>不利于多人合作</li>
+<li>容易丢失数据</li>
+</ol>
+</li>
+</ol>
+</li>
+<li>集中版本控制<strong>SVN</strong><ol>
+<li>优点<ol>
+<li>集中管理比较方便</li>
+</ol>
+</li>
+<li>缺点<ol>
+<li>效率不高</li>
+<li>没有联网无法查看历史版本</li>
+<li>容易发生冲突</li>
+<li>服务器发生意外时，数据容易全部丢失</li>
+</ol>
+</li>
+</ol>
+</li>
+<li>分布式版本控制<strong>Git</strong><ol>
+<li>优点<ol>
+<li>每个用户都有全部的历史版本</li>
+<li>效率高</li>
+<li>不会因为网络问题而丢失数据</li>
+</ol>
+</li>
+<li>缺点<ol>
+<li>容易“删库到跑路”</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+<h3 id="Git组成结构"><a href="#Git组成结构" class="headerlink" title="Git组成结构"></a>Git组成结构</h3><ol>
+<li>对象：<ol>
+<li>git对象</li>
+<li>树对象</li>
+<li>提交对象</li>
+</ol>
+</li>
+<li>区域：<ol>
+<li>工作区（Workspace) –&gt; 沙箱环境</li>
+<li>暂存区（storage) </li>
+<li>版本库 (Repository)</li>
+</ol>
+</li>
+</ol>
+<h3 id="安装Git"><a href="#安装Git" class="headerlink" title="安装Git"></a>安装Git</h3><ol>
+<li><p>从官网下载git（适合自己的操作系统的版本）</p>
+<p><a target="_blank" rel="noopener" href="https://git-scm.com/downloads">点击下载git</a></p>
+</li>
+<li><p>开始安装（基本上是无脑下一步）</p>
+<ol>
+<li><p><a target="_blank" rel="noopener" href="https://blog.csdn.net/weixin_44908734/article/details/108687477">点击查看安装教程</a></p>
+</li>
+<li><p>桌面右键 –&gt; git bash here –&gt; 输入 <code>git config --global user.name &quot;Your Name&quot;</code> 和 <code>git config --global user.email &quot;email@example.com&quot;</code></p>
+<blockquote>
+<p>输入名称和邮箱，绑定身份。其中<code>--global</code> 是全局参数，用了这个参数这台机器上的所有仓库都会使用这个配置。当然你可以自己选择给每个仓库设置不同的配置。(具体操作看下一步)</p>
+</blockquote>
+</li>
+</ol>
+</li>
+</ol>
+<h3 id="Git初始化配置"><a href="#Git初始化配置" class="headerlink" title="Git初始化配置"></a>Git初始化配置</h3><blockquote>
+<p>其中 git config –system –&gt; 系统层面 ; git config –global –&gt; 用户层面  ; git config –&gt; 项目层面 </p>
+</blockquote>
+<ol>
+<li>查看配置 –&gt; git config -l</li>
+<li>查看系统配置  –&gt; git config –system –list</li>
+<li>查看用户本地全局配置 –&gt; git config –global –list</li>
+<li>查看git版本 –&gt; git –version</li>
+<li>==设置用户名和邮箱==<ol>
+<li>设置名称 –&gt; git config –global user.name “Hawthornleaves”</li>
+<li>设置邮箱 –&gt; git config –global user.email “<a href="mailto:&#x31;&#x30;&#50;&#57;&#51;&#53;&#54;&#x37;&#x36;&#54;&#64;&#113;&#x71;&#x2e;&#x63;&#x6f;&#x6d;">&#x31;&#x30;&#50;&#57;&#51;&#53;&#54;&#x37;&#x36;&#54;&#64;&#113;&#x71;&#x2e;&#x63;&#x6f;&#x6d;</a>“</li>
+</ol>
+</li>
+<li>查看是否配置成功 –&gt; git config –list ，检查邮箱和名称</li>
+</ol>
+<h3 id="远程仓库"><a href="#远程仓库" class="headerlink" title="远程仓库"></a>远程仓库</h3><blockquote>
+<p><a target="_blank" rel="noopener" href="https://www.jianshu.com/p/059ed1e01229">点击详情</a></p>
+</blockquote>
+<ol>
+<li>查看是否存在SSH Keys。</li>
+</ol>
+<pre class="line-numbers language-none"><code class="language-none">cd ~&#x2F;.ssh
+ls<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 
+<ol start="2">
+<li>如果没有 , 则生成一个</li>
+</ol>
+<pre class="line-numbers language-none"><code class="language-none">$ ssh-keygen -t rsa -C &quot;your_email&quot;<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<blockquote>
+<p> 第一个Enter表示Keys存储的位置，默认按回车键即可。第二个和第三个Enter表示Push文件的时候要输入的密码，不需要密码就默认按回车键即可，然后出现如图底部信息就说明创建成功了！</p>
+</blockquote>
+<ol start="3">
+<li>复制.pub的内容，粘贴到相应的代码平台绑定SSH即可。</li>
+</ol>
+<h3 id="创建版本库"><a href="#创建版本库" class="headerlink" title="创建版本库"></a>创建版本库</h3><blockquote>
+<p>版本库又称仓库，英文名repository。可以理解成一个目录，其中所有文件的创建，修改，删除，Git都可以进行跟踪。</p>
+</blockquote>
+<ol>
+<li><p>创建一个空的目录</p>
+<pre class="line-numbers language-txt" data-language="txt"><code class="language-txt">$ mkdir learngit
+$ cd learngit
+$ pwd
+&#x2F;Users&#x2F;michael&#x2F;learngit<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>其中：mkdir –&gt; 创建一个文件夹；cd –&gt; 进入指定目录；pwd –&gt; 显示当前所在的目录</p>
+</li>
+<li><p>初始化仓库</p>
+<pre class="line-numbers language-txt" data-language="txt"><code class="language-txt">$ git init
+Initialized empty Git repository in &#x2F;Users&#x2F;michael&#x2F;learngit&#x2F;.git&#x2F;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+
+<p>注意这时候在刚才创建的空目录learngit中多了一个.git的文件，这个是Git用来跟踪管理版本库的。</p>
+</li>
+<li><p>把文件添加到版本库</p>
+<ol>
+<li><p>在learngit目录下或者子目录下，创建一个新的文件readme.txt，内容如下:</p>
+<pre class="line-numbers language-txt" data-language="txt"><code class="language-txt">Git is a version control system.
+Git is free software.<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+</li>
+<li><p>使用<code>git add</code>命令，将readme.txt==添加==到仓库中</p>
+<pre class="line-numbers language-txt" data-language="txt"><code class="language-txt">$ git add readme.txt<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+</li>
+<li><p>使用<code>git commit</code>，将readme。txt==提交==到仓库中</p>
+<pre class="line-numbers language-txt" data-language="txt"><code class="language-txt">$ git commit -m &quot;wrote a readme file&quot;
+[master (root-commit) eaadf4e] wrote a readme file
+ 1 file changed, 2 insertions(+)
+ create mode 100644 readme.txt<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>其中 <code>-m</code> 后面输入的内容是本次提交的说明，尽量使其有意义，增加可读性；<code> 1 file changed</code>：一个文件被改动（readme.txt）；<code>2 insertions(+)</code>：插入了两行内容（上面输入的）</p>
+</li>
+</ol>
+</li>
+</ol>
+<h2 id="Git文件操作"><a href="#Git文件操作" class="headerlink" title="Git文件操作"></a>Git文件操作</h2><h3 id="工作流程"><a href="#工作流程" class="headerlink" title="工作流程"></a>工作流程</h3><p><img src="git%E7%AC%94%E8%AE%B0.assets/image-20201203171632763.png" alt="image-20201203171632763"></p>
+<h3 id="修改文件"><a href="#修改文件" class="headerlink" title="修改文件"></a>修改文件</h3><hr>
+<ol>
+<li>将之前操作的文件readme.txt的内容修改为:</li>
+</ol>
+<pre class="line-numbers language-none"><code class="language-none">Git is a distributed version control system.
+Git is free software.<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+
+<ol start="2">
+<li><p>现在运行<code>git status</code>命令查看结果：</p>
+<pre class="line-numbers language-none"><code class="language-none">$ git status
+On branch master
+Changes not staged for commit:
+  (use &quot;git add &lt;file&gt;...&quot; to update what will be committed)
+  (use &quot;git checkout -- &lt;file&gt;...&quot; to discard changes in working directory)
+
+	modified:   readme.txt
+
+no changes added to commit (use &quot;git add&quot; and&#x2F;or &quot;git commit -a&quot;)<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<pre class="line-numbers language-git" data-language="git"><div class="caption"><span>status``` 命令可以查看当前仓库的状态，上面的提示概括为：readme.txt文件已修改，但是还没有做好提交的准备</span></div><code class="language-git">
+3. 运行```git diff```查看readme.txt具体更改的内容
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<p>$ git diff readme.txt<br>diff –git a/readme.txt b/readme.txt<br>index 46d49bf..9247db6 100644<br>— a/readme.txt<br>+++ b/readme.txt<br>@@ -1,2 +1,2 @@<br>-Git is a version control system.<br>+Git is a distributed version control system.<br> Git is free software.</p>
+<pre class="line-numbers language-none"><code class="language-none">
+   可以看到删除了一行&#96;&#96;&#96;-Git is a version control system.&#96;&#96;&#96;，增加了一行&#96;&#96;&#96;+Git is a distributed version control system.&#96;&#96;&#96;，其实这里是替换的结果。
+
+4. 确认完修改，放心添加到库中
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+<p>git add readme.txt</p>
+<pre class="line-numbers language-none"><code class="language-none">
+5. 在运行一遍&#96;&#96;&#96;git status&#96;&#96;&#96;
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<p>$ git status<br>On branch master<br>Changes to be committed:<br>  (use “git reset HEAD <file>…” to unstage)</p>
+<pre><code>modified:   readme.txt</code></pre>
+<pre class="line-numbers language-none"><code class="language-none">
+   这里告诉我们，将要被提交的修改中有readme.txt
+
+6. 可以放心提交了，使用&#96;&#96;&#96;git commit&#96;&#96;&#96;
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+<p>$ git commit -m “add distributed”<br>[master e475afc] add distributed<br> 1 file changed, 1 insertion(+), 1 deletion(-)</p>
+<pre class="line-numbers language-none"><code class="language-none">
+7. 最后再查看一下仓库的状态&#96;&#96;&#96;git status&#96;&#96;&#96;
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<p>$ git status<br>On branch master<br>nothing to commit, working tree clean</p>
+<pre class="line-numbers language-none"><code class="language-none">
+### 版本回退，[点击详情](https:&#x2F;&#x2F;www.jianshu.com&#x2F;p&#x2F;3020740561a8)
+
+1. 再次修改readme.txt文件
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+<p>Git is a distributed version control system.<br>Git is free software distributed under the GPL.</p>
+<pre class="line-numbers language-none"><code class="language-none">
+2. 添加并提交
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<p>$ git add readme.txt<br>$ git commit -m “append GPL”<br>[master 1094adb] append GPL<br> 1 file changed, 1 insertion(+), 1 deletion(-)</p>
+<pre class="line-numbers language-none"><code class="language-none">
+3. 使用&#96;&#96;&#96;git log&#96;&#96;&#96;查看历史版本
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<p>$ git log<br>commit 1094adb7b9b3807259d8cb349e7df1d4d6477073 (HEAD -&gt; master)<br>Author: Michael Liao <a href="mailto:&#x61;&#115;&#107;&#120;&#117;&#101;&#x66;&#x65;&#110;&#103;&#x40;&#103;&#x6d;&#97;&#105;&#108;&#x2e;&#99;&#111;&#x6d;">&#x61;&#115;&#107;&#120;&#117;&#101;&#x66;&#x65;&#110;&#103;&#x40;&#103;&#x6d;&#97;&#105;&#108;&#x2e;&#99;&#111;&#x6d;</a><br>Date:   Fri May 18 21:06:15 2018 +0800</p>
+<pre><code>append GPL</code></pre>
+<p>commit e475afc93c209a690c39c13a46716e8fa000c366<br>Author: Michael Liao <a href="mailto:&#x61;&#x73;&#x6b;&#x78;&#117;&#101;&#x66;&#x65;&#110;&#103;&#64;&#103;&#109;&#97;&#x69;&#x6c;&#x2e;&#x63;&#111;&#x6d;">&#x61;&#x73;&#x6b;&#x78;&#117;&#101;&#x66;&#x65;&#110;&#103;&#64;&#103;&#109;&#97;&#x69;&#x6c;&#x2e;&#x63;&#111;&#x6d;</a><br>Date:   Fri May 18 21:03:36 2018 +0800</p>
+<pre><code>add distributed</code></pre>
+<p>commit eaadf4e385e865d25c48e7ca9c8395c3f7dfaef0<br>Author: Michael Liao <a href="mailto:&#97;&#x73;&#x6b;&#x78;&#117;&#101;&#x66;&#x65;&#110;&#103;&#x40;&#103;&#109;&#x61;&#x69;&#108;&#46;&#x63;&#x6f;&#x6d;">&#97;&#x73;&#x6b;&#x78;&#117;&#101;&#x66;&#x65;&#110;&#103;&#x40;&#103;&#109;&#x61;&#x69;&#108;&#46;&#x63;&#x6f;&#x6d;</a><br>Date:   Fri May 18 20:59:18 2018 +0800</p>
+<pre><code>wrote a readme file</code></pre>
+<pre class="line-numbers language-none"><code class="language-none">
+   这里可以看到三个版本号,从修改日期从近到远排列依次是：&quot;append GPL&quot; --&gt; &quot;add distributed&quot; --&gt; &quot;append GPL&quot;
+
+   &#x3D;&#x3D;对于不同的电脑来说，提交的id不同；对于同一台电脑来说，每次提交的id不同！！！&#x3D;&#x3D;
+
+4. 使用&#96;&#96;&#96;git log --pretty&#x3D;oneline&#96;&#96;&#96; 查看简略信息
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>$ git log –pretty=oneline<br>1094adb7b9b3807259d8cb349e7df1d4d6477073 (HEAD -&gt; master) append GPL<br>e475afc93c209a690c39c13a46716e8fa000c366 add distributed<br>eaadf4e385e865d25c48e7ca9c8395c3f7dfaef0 wrote a readme file</p>
+<pre class="line-numbers language-none"><code class="language-none">
+5. 使用命令&#96;&#96;&#96;git reset --hard HEAD^&#96;&#96;&#96;回退到前面的版本
+
+   &gt; 在git中&#x3D;&#x3D;HEAD&#x3D;&#x3D;指向当前的版本，也就是最新的提交的修改id&#96;&#96;&#96;1094adb...&#96;&#96;&#96;(一般来说前七位就够了);上一个版本就是&#96;&#96;&#96;HEAD^&#96;&#96;&#96;,上上个版本就是&#96;&#96;&#96;HEAD^^&#96;&#96;&#96;;上一百个版本就是&#96;&#96;&#96;HEAD~100&#96;&#96;&#96;
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+<p>$ git reset –hard HEAD^<br>HEAD is now at e475afc add distributed</p>
+<pre class="line-numbers language-none"><code class="language-none">
+6. 使用&#96;&#96;&#96;git log&#96;&#96;&#96;,查看下记录
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<p>$ git log<br>commit e475afc93c209a690c39c13a46716e8fa000c366 (HEAD -&gt; master)<br>Author: Michael Liao <a href="mailto:&#97;&#115;&#107;&#x78;&#117;&#101;&#102;&#101;&#x6e;&#103;&#64;&#103;&#x6d;&#97;&#x69;&#x6c;&#46;&#99;&#111;&#x6d;">&#97;&#115;&#107;&#x78;&#117;&#101;&#102;&#101;&#x6e;&#103;&#64;&#103;&#x6d;&#97;&#x69;&#x6c;&#46;&#99;&#111;&#x6d;</a><br>Date:   Fri May 18 21:03:36 2018 +0800</p>
+<pre><code>add distributed</code></pre>
+<p>commit eaadf4e385e865d25c48e7ca9c8395c3f7dfaef0<br>Author: Michael Liao <a href="mailto:&#97;&#115;&#107;&#x78;&#x75;&#101;&#102;&#101;&#x6e;&#103;&#x40;&#x67;&#x6d;&#97;&#x69;&#108;&#46;&#99;&#111;&#x6d;">&#97;&#115;&#107;&#x78;&#x75;&#101;&#102;&#101;&#x6e;&#103;&#x40;&#x67;&#x6d;&#97;&#x69;&#108;&#46;&#99;&#111;&#x6d;</a><br>Date:   Fri May 18 20:59:18 2018 +0800</p>
+<pre><code>wrote a readme file</code></pre>
+<pre class="line-numbers language-none"><code class="language-none">
+   果然回退到了&quot;add distributed&quot;版本，而且&quot;append GPL&quot;版本已经不见了。那如果想回到&quot;append GPL&quot;版本怎们办呢？
+
+7. 寻找&quot;append GPL&quot;版本的id，并回退到这个版本
+
+   1. 未重新打开git bash
+
+      * 使用&#96;&#96;&#96;git log&#96;&#96;&#96; 找到其对应的id为&#96;&#96;&#96;1094adb&#96;&#96;&#96;
+
+      * 使用&#96;&#96;&#96;git reset --hard 1094adb&#96;&#96;&#96;倒退回去即可
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<pre><code> $ git reset --hard 1094a
+ HEAD is now at 83b0afe append GPL
+ <pre class="line-numbers language-none"><code class="language-none">
+* &#96;&#96;&#96;cat readme.txt&#96;&#96;&#96;查看当前文件内容
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+ $ cat readme.txt
+ Git is a distributed version control system.
+ Git is free software distributed under the GPL.
+ <pre class="line-numbers language-none"><code class="language-none">
+     回退成功
+
+   * 如果要push的话，只能使用&#96;&#96;&#96;git push -f&#96;&#96;&#96;强制推送，这将会导致本地强制覆盖远程，远程仓库的历史记录会删除该版本之后的提交记录。
+
+   * 如果想要回复的话，请看下面。
+
+2. 重新打开git bash
+
+   * &#96;&#96;&#96;git reflog&#96;&#96;&#96;查看每一次指令的记录
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+ $ git reflog
+ e475afc HEAD@&#123;1&#125;: reset: moving to HEAD^
+  1094adb (HEAD -&gt; master) HEAD@&#123;2&#125;: commit: append GPL
+ e475afc HEAD@&#123;3&#125;: commit: add distributed
+ eaadf4e HEAD@&#123;4&#125;: commit (initial): wrote a readme file
+ ```</code></pre>
+<ul>
+<li>找到”append GPL”对应的id，并按照之前的操作即可。</li>
+</ul>
+</li>
+</ol>
+<h3 id="更换远程仓并覆盖原文件"><a href="#更换远程仓并覆盖原文件" class="headerlink" title="更换远程仓并覆盖原文件"></a>更换远程仓并覆盖原文件</h3><ol>
+<li><code>git remote set-url 地址</code>–&gt; 更换远程仓</li>
+<li><code>git push -f</code>–&gt; 覆盖原文件</li>
+</ol>
+<h2 id="团队合作"><a href="#团队合作" class="headerlink" title="团队合作"></a>团队合作</h2><p>因此，多人协作的工作模式通常是这样：</p>
+<ol>
+<li>首先，可以试图用<code>git push origin &lt;branch-name&gt;</code>推送自己的修改；</li>
+<li>如果推送失败，则因为远程分支比你的本地更新，需要先用<code>git pull</code>试图合并；</li>
+<li>如果合并有冲突，则解决冲突，并在本地提交；</li>
+<li>没有冲突或者解决掉冲突后，再用<code>git push origin &lt;branch-name&gt;</code>推送就能成功！</li>
+</ol>
+<p>如果<code>git pull</code>提示<code>no tracking information</code>，则说明本地分支和远程分支的链接关系没有创建，用命令<code>git branch --set-upstream-to &lt;branch-name&gt; origin/&lt;branch-name&gt;</code>。</p>
+<p>这就是多人协作的工作模式，一旦熟悉了，就非常简单。</p>
+<h3 id="小结"><a href="#小结" class="headerlink" title="小结"></a>小结</h3><ul>
+<li>查看远程库信息，使用<code>git remote -v</code>；</li>
+<li>本地新建的分支如果不推送到远程，对其他人就是不可见的；</li>
+<li>从本地推送分支，使用<code>git push origin branch-name</code>，如果推送失败，先用<code>git pull</code>抓取远程的新提交；</li>
+<li>在本地创建和远程分支对应的分支，使用<code>git checkout -b branch-name origin/branch-name</code>，本地和远程分支的名称最好一致；</li>
+<li>建立本地分支和远程分支的关联，使用<code>git branch --set-upstream branch-name origin/branch-name</code>；</li>
+<li>从远程抓取分支，使用<code>git pull</code>，如果有冲突，要先处理冲突。</li>
+</ul>
+<h2 id="一些疑问"><a href="#一些疑问" class="headerlink" title="一些疑问"></a>一些疑问</h2><ol>
+<li><p>Q：每次都需要pull下来，那不是非常的慢嘛？</p>
+</li>
+<li><p>Q：多人修改时，怎么解决冲突</p>
+</li>
+<li><p>Q：开发工具的版本不一样怎么办</p>
+</li>
+<li><p>Q：怎么找回以前的版本</p>
+</li>
+</ol>
 
                 
             </div>
@@ -499,7 +889,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://hawthornleaves.github.io/2021/01/29/test/">http://hawthornleaves.github.io/2021/01/29/test/</a>
+                    <a href="http://hawthornleaves.github.io/2021/01/29/git-bi-ji/">http://hawthornleaves.github.io/2021/01/29/git-bi-ji/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -704,9 +1094,10 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
                 <a href="/2021/01/29/git-bi-ji/">
                     <div class="card-image">
@@ -724,9 +1115,9 @@
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2021-01-29
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-01-29
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-user fa-fw"></i>
@@ -735,6 +1126,7 @@
                         </span>
                     </div>
                 </div>
+
                 
             </div>
         </div>
@@ -745,13 +1137,13 @@
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2020/09/25/di-yi-pian-bo-ke/">
+                <a href="/2021/01/29/test/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/13.jpg" class="responsive-img" alt="第一篇博客">
+                        <img src="/medias/featureimages/10.jpg" class="responsive-img" alt="test">
                         
-                        <span class="card-title">第一篇博客</span>
+                        <span class="card-title">test</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -762,7 +1154,7 @@
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-09-25
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-01-29
                             </span>
                         <span class="publish-author">
                             
